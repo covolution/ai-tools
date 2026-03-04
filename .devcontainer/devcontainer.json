@@ -1,0 +1,31 @@
+{
+    "name": "AI Tools",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": "os-provided"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "yzhang.markdown-all-in-one",
+                "github.vscode-github-actions",
+                "redhat.vscode-yaml",
+                "tyriar.sort-lines",
+                "tberman.json-schema-validator",
+                "ms-vscode.makefile-tools",
+                "vstirbu.vscode-mermaid-preview"
+            ],
+            "settings": {
+                "files.exclude": {
+                    "**/.DS_Store": true,
+                    "**/__pycache__": true
+                }
+            }
+        }
+    },
+    "remoteUser": "vscode",
+    "hostRequirements": {
+        "memory": "8gb",
+        "cpus": 4
+    }
+}

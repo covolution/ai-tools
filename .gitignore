@@ -110,6 +110,24 @@ dist
 # Serverless directories
 .serverless/
 
+# IDEs and Editors
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+.vs/
+
 # FuseBox cache
 .fusebox/
 
