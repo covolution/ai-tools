@@ -1,5 +1,5 @@
-# ai-tools
-A collection of AI tool
+# AI Tools
+This repository contains a curated collection of AI agents and skills designed to enhance development workflows and provide specialized capabilities for various software engineering tasks.
 
 ## Repository note
 
