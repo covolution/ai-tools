@@ -3,5 +3,7 @@ This repository contains a curated collection of AI agents and skills designed t
 
 ## Repository note
 
-In this repository, `.agents` is the real directory and `.claude` is a symlink to `.agents`.
-This keeps both paths working while maintaining a single source of truth for shared skills and agent resources.
+In this repository, `.claude` is the real directory and `.agent` is a symlink to `.claude`. `.kiro` is also a symlink to `.claude`. 
+
+However, Openskills uses `.agent` but it seems most other tools use a plural `.agents`.
+This keeps paths working while maintaining a single source of truth for shared skills and agent resources.
