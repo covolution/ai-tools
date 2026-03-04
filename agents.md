@@ -129,3 +129,78 @@ Request: "Help me create a clean commit from these changes"
 ---
 
 For detailed information about specific skills, see the individual skill directories in `.agents/skills/`.
+
+<skills_system priority="1">
+
+## Available Skills
+
+<!-- SKILLS_TABLE_START -->
+<usage>
+When users ask you to perform tasks, check if any of the available skills below can help complete the task more effectively. Skills provide specialized capabilities and domain knowledge.
+
+How to use skills:
+- Invoke: `npx openskills read <skill-name>` (run in your shell)
+  - For multiple: `npx openskills read skill-one,skill-two`
+- The skill content will load with detailed instructions on how to complete the task
+- Base directory provided in output for resolving bundled resources (references/, scripts/, assets/)
+
+Usage notes:
+- Only use skills listed in <available_skills> below
+- Do not invoke a skill that is already loaded in your context
+- Each skill invocation is stateless
+</usage>
+
+<available_skills>
+
+<skill>
+<name>architect-refine-critique</name>
+<description>"Three-phase design review. Chain architect → refiner → critique subagents. Triggers on: 'design review', 'architecture review', '/arc', system design proposals, significant refactoring decisions, new service or module design."</description>
+<location>project</location>
+</skill>
+
+<skill>
+<name>c4-architecture</name>
+<description>Generate architecture documentation using C4 model Mermaid diagrams. Use when asked to create architecture diagrams, document system architecture, visualize software structure, create C4 diagrams, or generate context/container/component/deployment diagrams. Triggers include "architecture diagram", "C4 diagram", "system context", "container diagram", "component diagram", "deployment diagram", "document architecture", "visualize architecture".</description>
+<location>project</location>
+</skill>
+
+<skill>
+<name>commit-work</name>
+<description>"Create high-quality git commits: review/stage intended changes, split into logical commits, and write clear commit messages (including Conventional Commits). Use when the user asks to commit, craft a commit message, stage changes, or split work into multiple commits."</description>
+<location>project</location>
+</skill>
+
+<skill>
+<name>difficult-workplace-conversations</name>
+<description>Structured approach to workplace conflicts, performance discussions, and challenging feedback using preparation-delivery-followup framework. Use when preparing for tough conversations, addressing conflicts, giving critical feedback, or navigating sensitive workplace discussions.</description>
+<location>project</location>
+</skill>
+
+<skill>
+<name>draw-io</name>
+<description>draw.io diagram creation, editing, and review. Use for .drawio XML editing, PNG conversion, layout adjustment, and AWS icon usage.</description>
+<location>project</location>
+</skill>
+
+<skill>
+<name>lightweight-design-analysis</name>
+<description>"This skill analyzes code for design quality improvements across 8 dimensions: Naming, Object Calisthenics, Coupling & Cohesion, Immutability, Domain Integrity, Type System, Simplicity, and Performance. Ensures rigorous, evidence-based analysis by: (1) Understanding code flow first via implementation-analysis protocol, (2) Systematically evaluating each dimension with specific criteria, (3) Providing actionable findings with file:line references. Triggers when users request: code analysis, design review, refactoring opportunities, code quality assessment, architecture evaluation."</description>
+<location>project</location>
+</skill>
+
+<skill>
+<name>lightweight-implementation-analysis-protocol</name>
+<description>"This skill should be used when fixing bugs, implementing features, debugging issues, or making code changes. Ensures understanding of code flow before implementation by: (1) Tracing execution path with specific file:line references, (2) Creating lightweight text diagrams showing class.method() flows, (3) Verifying understanding with user. Prevents wasted effort from assumptions or guessing. Triggers when users request: bug fixes, feature implementations, refactoring, TDD cycles, debugging, code analysis."</description>
+<location>project</location>
+</skill>
+
+<skill>
+<name>mermaid-diagrams</name>
+<description>Comprehensive guide for creating software diagrams using Mermaid syntax. Use when users need to create, visualize, or document software through diagrams including class diagrams (domain modeling, object-oriented design), sequence diagrams (application flows, API interactions, code execution), flowcharts (processes, algorithms, user journeys), entity relationship diagrams (database schemas), C4 architecture diagrams (system context, containers, components), state diagrams, git graphs, pie charts, gantt charts, or any other diagram type. Triggers include requests to "diagram", "visualize", "model", "map out", "show the flow", or when explaining system architecture, database design, code structure, or user/application flows.</description>
+<location>project</location>
+</skill>
+
+</available_skills>
+<!-- SKILLS_TABLE_END -->
+
+</skills_system>
