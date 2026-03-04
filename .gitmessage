@@ -1,0 +1,27 @@
+# <type>(<scope>): <subject>
+#
+# Types:
+#   feat     A new feature
+#   fix      A bug fix
+#   docs     Documentation only changes
+#   style    Formatting, missing semicolons, etc (no logic change)
+#   refactor A code change that is neither a fix nor a feature
+#   perf     A code change that improves performance
+#   test     Adding or updating tests
+#   chore    Build process, dependency updates, tooling
+#   ci       CI/CD configuration changes
+#   revert   Reverts a previous commit
+#
+# Scope: optional, noun describing section of codebase (e.g. auth, api, cli)
+# Subject: imperative mood, lowercase, no period, max 50 chars
+#
+# ---- BODY (optional, wrap at 72 chars) ----
+#
+# Explain the motivation for this change. What problem does it solve?
+# How does it differ from the previous behaviour?
+#
+# ---- FOOTER (optional) ----
+#
+# Reference issues:   Closes #123, Refs #456
+# Breaking change:    BREAKING CHANGE: <description>
+#
